@@ -26,6 +26,29 @@ img {
   display: block;
 }
 
+*::-webkit-scrollbar {
+  display: block;
+  width: 16px;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  border: 1px solid rgba(255, 255, 255, 0.2509803922);
+  border-radius: 24px;
+}
+
 /* 1023px */
 /* 740px */
 /* 739px */
@@ -52,6 +75,10 @@ img {
   .container .document .layout h1 {
     text-align: center;
   }
+}
+.container .document .list {
+  overflow-y: scroll;
+  max-height: 80vh;
 }
 .container .document .list-items {
   padding: 1rem 3rem;
